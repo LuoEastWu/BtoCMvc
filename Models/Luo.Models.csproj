@@ -40,11 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Goods.cs" />
     <Compile Include="GoodsBrand.cs" />
     <Compile Include="GoodsCategory.cs" />
     <Compile Include="GoodsCategoryExpandProperty.cs" />
+    <Compile Include="GoodsImages.cs" />
     <Compile Include="GoodsSpecificationDetails.cs" />
     <Compile Include="GoodsSpecificationType.cs" />
+    <Compile Include="GoodsSupplier.cs" />
+    <Compile Include="GoodsUserLvPrice.cs" />
+    <Compile Include="Goods_Specification.cs" />
     <Compile Include="Goods_Type_SpecificationType.cs" />
     <Compile Include="GoodsType.cs" />
     <Compile Include="Goods_Type_Brand.cs" />

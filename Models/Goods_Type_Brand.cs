@@ -16,7 +16,7 @@ namespace Luo.Models
         /// 商品类型和品牌关联ID
         /// </summary>
         [SugarColumn(IsNullable = false, IsIdentity = true, IsPrimaryKey = true, ColumnDescription = "商品类型和品牌关联ID")]
-        public Int32 Type_BrandId { get; set; }
+        public Int32 Goods_Type_BrandId { get; set; }
 
         /// <summary>
         ///  类型ID

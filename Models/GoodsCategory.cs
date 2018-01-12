@@ -23,12 +23,12 @@ namespace Luo.Models
         /// 父类id
         /// </summary>
         [SugarColumn(ColumnDescription = "父类id")]
-        public String ParentId { get; set; }
+        public Int32 ParentId { get; set; }
 
         /// <summary>
         /// 树状字符
         /// </summary>
-        [SugarColumn(ColumnDescription = "树状字符")]
+        [SugarColumn(ColumnDescription = "树状字符",Length =100)]
         public String CategoryPath { get; set; }
 
         /// <summary>
