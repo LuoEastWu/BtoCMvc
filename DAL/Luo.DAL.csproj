@@ -41,7 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeFirstTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{358c10f0-4376-4865-8d7b-45e80b15a429}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Luo.Collections\Luo.Collections.csproj">
+      <Project>{e15f09b2-3394-41fe-8ef8-8be6e0a87103}</Project>
+      <Name>Luo.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Luo.Models.csproj">
+      <Project>{f6144fc8-3818-46db-bad0-7dcc2878a923}</Project>
+      <Name>Luo.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlSugar\SqlSugar.csproj">
+      <Project>{489bb790-226c-4fad-8d1e-51d72a7ff8e5}</Project>
+      <Name>SqlSugar</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

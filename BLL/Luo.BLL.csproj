@@ -41,7 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeFirstTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\Luo.DAL.csproj">
+      <Project>{ffca9283-bb2e-42f9-aa19-b58627aca5fd}</Project>
+      <Name>Luo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{358c10f0-4376-4865-8d7b-45e80b15a429}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Luo.Collections\Luo.Collections.csproj">
+      <Project>{e15f09b2-3394-41fe-8ef8-8be6e0a87103}</Project>
+      <Name>Luo.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Luo.IBLL\IBLL.csproj">
+      <Project>{4beb6267-8c35-43ec-a5be-bd3c2de588ad}</Project>
+      <Name>IBLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
