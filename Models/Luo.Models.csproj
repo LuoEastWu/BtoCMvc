@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delivery.cs" />
+    <Compile Include="DeliveryItem.cs" />
     <Compile Include="DistributionType.cs" />
     <Compile Include="Goods.cs" />
     <Compile Include="GoodsBrand.cs" />
@@ -55,7 +57,9 @@
     <Compile Include="GoodsType.cs" />
     <Compile Include="Goods_Type_Brand.cs" />
     <Compile Include="LogisticsCorp.cs" />
+    <Compile Include="OrderItems.cs" />
     <Compile Include="Orders.cs" />
+    <Compile Include="Payments.cs" />
     <Compile Include="PaymentWay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regions.cs" />

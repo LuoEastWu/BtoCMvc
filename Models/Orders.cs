@@ -213,7 +213,7 @@ namespace Luo.Models
         /// </summary>
         /// 
         private Decimal costTax = 0.000m;
-        [SugarColumn(ColumnDescription = "发票税率")]
+        [SugarColumn(ColumnDescription = "发票税率", IsNullable = false)]
         public Decimal CostTax { get => costTax; set => costTax = value; }
 
 
@@ -238,83 +238,98 @@ namespace Luo.Models
         /// </summary>
         /// 
         private Boolean isProtect = false;
-        [SugarColumn(ColumnDescription = "")]
-        public Boolean IsProtect { get=> isProtect; set=> isProtect=value; }
+        [SugarColumn(ColumnDescription = "是否选择保价费率")]
+        public Boolean IsProtect { get => isProtect; set => isProtect = value; }
 
 
-    /// <summary>
-    ///保险率
-    /// </summary>
-    [SugarColumn(ColumnDescription = "")]
-    public String   { get; set; }
-
-
-/// <summary>
-///货币
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
-/// <summary>
-///货币汇率
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
-/// <summary>
-///折扣
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-
-    
-/// <summary>
-///货币结算金额
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
-/// <summary>
-///订单总金额
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
-/// <summary>
-///已付款金额
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
-/// <summary>
-///记要
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
-/// <summary>
-///是否删除
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
-/// <summary>
-///最后修改时间
-/// </summary>
-[SugarColumn(ColumnDescription = "")]
-public String   { get; set; }
-
-    
+        /// <summary>
+        ///保险率
+        /// </summary>
+        /// 
+        private Decimal costProtect = 0.000m;
+        [SugarColumn(ColumnDescription = "保险率", DecimalDigits = 3, IsNullable = false)]
+        public Decimal CostProtect { get => costProtect; set => costProtect = value; }
 
 
 
-}
+
+        /// <summary>
+        ///货币
+        /// </summary>
+        [SugarColumn(ColumnDescription = "货币", Length = 8)]
+        public String Currency { get; set; }
+        /// <summary>
+        ///货币汇率
+        /// </summary>
+        /// 
+        private Decimal curRate = 1.0000m;
+        [SugarColumn(ColumnDescription = "货币汇率", DecimalDigits = 4, IsNullable = false)]
+        public Decimal CurRate { get => curRate; set => curRate = value; }
+
+
+        /// <summary>
+        ///折扣
+        /// </summary>
+        /// 
+        private Decimal discount = 0.000m;
+        [SugarColumn(ColumnDescription = "折扣", DecimalDigits = 3, IsNullable = false)]
+        public Decimal Discount { get => discount; set => discount = value; }
+
+
+
+        /// <summary>
+        ///货币结算金额
+        /// </summary>
+        /// 
+        private Decimal totalAmount = 0.000m;
+        [SugarColumn(ColumnDescription = "货币结算金额", IsNullable = false, DecimalDigits = 3)]
+        public Decimal TotalAmount { get => totalAmount; set => totalAmount = value; }
+
+
+        /// <summary>
+        ///订单总金额
+        /// </summary>
+        /// 
+        private Decimal finalAmount = 0.000m;
+        [SugarColumn(ColumnDescription = "订单总金额", IsNullable = false, DecimalDigits = 3)]
+        public Decimal FinalAmount { get => finalAmount; set => finalAmount = value; }
+
+
+        /// <summary>
+        ///已付款金额
+        /// </summary>
+        /// 
+        private Decimal payed = 0.000m;
+        [SugarColumn(ColumnDescription = "已付款金额", DecimalDigits = 3)]
+        public Decimal Payed { get => payed; set => payed = value; }
+
+
+        /// <summary>
+        ///记要
+        /// </summary>
+        [SugarColumn(ColumnDescription = "记要", ColumnDataType = "ntext")]
+        public String Memo { get; set; }
+
+
+
+
+
+        /// <summary>
+        ///最后修改时间
+        /// </summary>
+        /// 
+        private Int32 lastChangeTime = 0;
+        [SugarColumn(ColumnDescription = "最后修改时间")]
+        public Int32 LastChangeTime { get => lastChangeTime; set => lastChangeTime = value; }
+
+        /// <summary>
+        ///  是否删除
+        /// </summary>
+        private Boolean disabled = false;
+        [SugarColumn(ColumnDescription = "是否删除", IsNullable = false)]
+        public Boolean Disabled { get => disabled; set => disabled = value; }
+
+
+
+    }
 }
