@@ -28,7 +28,7 @@ namespace Luo.Models
         /// </summary>
         private Int16 userLvId = 0;
         [SugarColumn(IsNullable =false,ColumnDescription ="用户等级")]
-        public Int16 UserLvId { get; set; }
+        public Int16 UserLvId { get=> userLvId; set=> userLvId=value; }
 
         /// <summary>
         /// 用户名
@@ -119,7 +119,7 @@ namespace Luo.Models
         /// <summary>
         /// 注册时间
         /// </summary>
-        [SugarColumn(Length =10,ColumnDescription ="注册时间")]
+        [SugarColumn(ColumnDescription ="注册时间")]
         public Int32 RegTime { get; set; }
         /// <summary>
         /// 密码问题答案

@@ -22,13 +22,13 @@ namespace Luo.Models
         ///  类型名称
         /// </summary>
         [SugarColumn(ColumnDescription = "类型名称",Length =100,IsNullable =false)]
-        public Int32 GoodsTypeName { get; set; }
+        public String GoodsTypeName { get; set; }
 
         /// <summary>
         /// 类型别名
         /// </summary>
         [SugarColumn(ColumnDescription = "类型别名",ColumnDataType ="ntext")]
-        public Int32 GoodsTypeAlias { get; set; }
+        public String GoodsTypeAlias { get; set; }
         /// <summary>
         /// 是否删除
         /// </summary>

@@ -20,7 +20,7 @@ namespace Luo.Models
         /// <summary>
         /// 用户操作记录ID
         /// </summary>
-        [SugarColumn(IsNullable = false, IsIdentity = true, IsPrimaryKey = true, ColumnDescription = "用户操作记录ID")]
+        [SugarColumn(IsNullable = false, ColumnDescription = "用户操作记录ID")]
         public Int64 UserId { get; set; }
         /// <summary>
         /// 用户名称
@@ -41,7 +41,7 @@ namespace Luo.Models
         /// <summary>
         /// 操作时间
         /// </summary>
-        [SugarColumn(Length = 10, ColumnDescription = "操作时间")]
+        [SugarColumn(ColumnDescription = "操作时间")]
         public Int32 OhOperation { get; set; }
 
         /// <summary>

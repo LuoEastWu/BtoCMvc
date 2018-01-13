@@ -15,7 +15,7 @@ namespace Luo.Models
         /// <summary>
         /// 角色ID
         /// </summary>
-        [SugarColumn(IsNullable =false,IsPrimaryKey =true,IsIdentity =true,Length =10,ColumnDescription ="角色ID")]
+        [SugarColumn(IsNullable =false,IsPrimaryKey =true,IsIdentity =true,ColumnDescription ="角色ID")]
         public Int16 RolesId { get; set; }
         /// <summary>
         /// 角色名称

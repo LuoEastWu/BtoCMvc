@@ -148,7 +148,7 @@ namespace Luo.Models
         ///制单人员
         /// </summary>
         [SugarColumn(ColumnDescription = "制单人员", Length = 50)]
-        public Int32 OperatorName { get; set; }
+        public String OperatorName { get; set; }
 
 
         /// <summary>
@@ -163,7 +163,7 @@ namespace Luo.Models
         ///备注
         /// </summary>
         [SugarColumn(ColumnDescription = "备注", ColumnDataType = "ntext")]
-        public Int32 Memo { get; set; }
+        public String Memo { get; set; }
 
         /// <summary>
         ///  是否删除

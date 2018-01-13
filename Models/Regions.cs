@@ -15,13 +15,13 @@ namespace Luo.Models
         /// <summary>
         /// 地理信息ID
         /// </summary>
-        [SugarColumn(IsNullable =false,IsPrimaryKey =true,Length =10,IsIdentity =true,ColumnDescription ="地理信息ID")]
-        public int RegionsId { get; set; }
+        [SugarColumn(IsNullable =false,IsPrimaryKey =true,IsIdentity =true,ColumnDescription ="地理信息ID")]
+        public Int32 RegionsId { get; set; }
         /// <summary>
         /// 父级地理信息ID
         /// </summary>
-        [SugarColumn(Length =10,ColumnDescription ="父级地理信息ID")]
-        public int ParentRegionsId { get; set; }
+        [SugarColumn(ColumnDescription ="父级地理信息ID")]
+        public Int32 ParentRegionsId { get; set; }
         /// <summary>
         /// 树状字符
         /// </summary>
@@ -30,7 +30,7 @@ namespace Luo.Models
         /// <summary>
         /// 地区等级
         /// </summary>
-        [SugarColumn(Length =8,ColumnDescription ="地区等级")]
+        [SugarColumn(ColumnDescription ="地区等级")]
         public Int16 RegionGrade { get; set; }
 
         /// <summary>

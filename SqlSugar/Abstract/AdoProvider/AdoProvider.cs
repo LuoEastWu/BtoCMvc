@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -257,6 +258,7 @@ namespace SqlSugar
             {
                 if (FormatSql != null) 
                     sql = FormatSql(sql);
+                Debug.WriteLine("执行Sql：" + sql);
                 SetConnectionStart(sql);
                 if (this.ProcessingEventStartingSQL != null)
                     ExecuteProcessingSQL(ref sql, parameters);

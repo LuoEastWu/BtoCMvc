@@ -29,13 +29,13 @@ namespace Luo.Models
         ///  属性名称
         /// </summary>
         [SugarColumn(ColumnDescription = "属性名称", Length =50,IsNullable = false)]
-        public Int32 Name { get; set; }
+        public String Name { get; set; }
 
         /// <summary>
         ///  属性别名
         /// </summary>
         [SugarColumn(ColumnDescription = "属性别名",Length =50, IsNullable = false)]
-        public Int32 Alias { get; set; }
+        public String Alias { get; set; }
         /// <summary>
         ///  规格显示方式select表示下拉显示 flat表示平铺显示
         /// </summary>

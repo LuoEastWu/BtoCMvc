@@ -15,7 +15,7 @@ namespace Luo.DAL
         {
             Collections.DbConnect.StartSqlSugar(db =>
             {
-                db.CodeFirst.BackupTable().InitTables("Luo.Models");
+                db.CodeFirst.InitTables("Luo.Models");
             });
            
         }

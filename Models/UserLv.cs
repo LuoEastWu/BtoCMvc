@@ -15,7 +15,7 @@ namespace Luo.Models
         /// <summary>
         /// 等级ID
         /// </summary>
-        [SugarColumn(IsNullable =false,IsPrimaryKey =true,IsIdentity =true,Length =8,ColumnDescription = "等级ID")]
+        [SugarColumn(IsNullable =false,IsPrimaryKey =true,IsIdentity =true,ColumnDescription = "等级ID")]
         public Int16 LvId { get; set; }
         /// <summary>
         /// 等级名称
@@ -46,7 +46,7 @@ namespace Luo.Models
         /// 等级所需积分
         /// </summary>
         private Int16 point = 0;
-        [SugarColumn(IsNullable =false,Length =8,ColumnDescription ="等级所需积分")]
+        [SugarColumn(IsNullable =false,ColumnDescription ="等级所需积分")]
         public short Point { get => point; set => point = value; }
 
         /// <summary>
