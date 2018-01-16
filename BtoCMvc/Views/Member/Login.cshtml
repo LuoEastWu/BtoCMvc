@@ -19,16 +19,18 @@
             <label for="password"><i class="am-icon-lock"></i></label>
             @Html.PasswordFor(m => m.Password, new { placeholder = "请输入密码" })
         </div>
+        <div class="login-links">
+            <input id="remember-me" style="width:15px;height:15px;line-height:10px;vertical-align:middle; margin-top:0;" type="checkbox">
+            <span class="pay_list_c1 on" style="line-height:10px">记住密码</span>
+            <a href="#" class="am-fr">忘记密码</a>
+            <a href="/Member/Register" class="zcnext am-fr am-btn-default">注册</a>
+            <br />
+        </div>
+        <div class="am-cf">
+            <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm">
+        </div>
     }
-    <div class="login-links">
-        <label for="remember-me"><input id="remember-me" type="checkbox">记住密码</label>
-        <a href="#" class="am-fr">忘记密码</a>
-        <a href="/Member/Register" class="zcnext am-fr am-btn-default">注册</a>
-        <br />
-    </div>
-    <div class="am-cf">
-        <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm">
-    </div>
+
 
 
     <div class="partner">

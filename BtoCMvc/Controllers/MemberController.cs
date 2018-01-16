@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
@@ -11,11 +13,14 @@ namespace BtoCMvc.Controllers
         // GET: Member
         public ActionResult Login()
         {
-            
             IBLL.CreateTable createTable = new Luo.BLL.CodeFirstTable();
-            createTable.CoderCreateTable();
+            //createTable.CoderCreateTable();
+         
             return View();
+
         }
+
+      
 
         public ActionResult Register()
         {
