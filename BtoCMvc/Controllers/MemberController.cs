@@ -11,6 +11,7 @@ namespace BtoCMvc.Controllers
         // GET: Member
         public ActionResult Login()
         {
+            
             IBLL.CreateTable createTable = new Luo.BLL.CodeFirstTable();
             createTable.CoderCreateTable();
             return View();
