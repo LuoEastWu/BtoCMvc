@@ -1,0 +1,46 @@
+﻿
+@{
+    var alert = TempData["Alert"] as BtoCMvc.App_Start.Alert;
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astounding Error Page Responsive Widget Template  :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Astounding Error Page Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  
+    <link href="~/Content/Error/style500.css" rel='stylesheet' type='text/css' /><!-- style.css -->
+  
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="main-w3layouts">
+        <h1>Astounding Error Page</h1>
+        <div class="main-agile">
+            @if (alert != null)
+            {
+                <h2>@alert.Message</h2>
+                <p>错误:@alert.Type.ToString()</p>
+            }
+            <div class="botton-w3ls"><a href="#">Back to home</a></div>
+
+        </div>
+        <div class="footer-w3l">
+            <p class="agileinfo"> &copy; 2017 Astounding Error Page. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+        </div>
+    </div>
+    <script src="~/Scripts/Error/app.js"></script>
+    <script src="~/Scripts/Error/particles.js"></script>
+
+</body>
+</html>

@@ -11,14 +11,15 @@ namespace BtoCMvc.Controllers
     public class MemberController : Controller
     {
         // GET: Member
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
+
+        //[App_Start.AuthorizeCheck]
         public ActionResult Login()
         {
-            IBLL.CreateTable createTable = new Luo.BLL.CodeFirstTable();
+            //IBLL.CreateTable createTable = new Luo.BLL.CodeFirstTable();
             //createTable.CoderCreateTable();
             return View();
         }
+
 
       
 
