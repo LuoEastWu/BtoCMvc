@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IBLL
 {
-    public partial interface IUserBLL
+    public partial interface IUser
     {
         /// <summary>
         /// 用户登录
