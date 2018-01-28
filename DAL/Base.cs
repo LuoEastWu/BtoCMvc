@@ -48,12 +48,22 @@ namespace Luo.DAL
 
         public Boolean Exist(Expression<Func<T, bool>> anyLambda)
         {
-            throw new NotImplementedException();
+            Boolean b = false;
+            Collections.DbConnect.StartSqlSugar((db) =>
+            {
+                b = db.Queryable<T>().Any(anyLambda);
+            });
+            return b;
         }
 
         public T Find(Expression<Func<T, bool>> whereLambda)
         {
-            throw new NotImplementedException();
+            T findT = new T();
+            Collections.DbConnect.StartSqlSugar((db) =>
+            {
+                findT = db.Queryable<T>().Where(whereLambda).First();
+            });
+            return findT;
         }
 
         public IQueryable<T> FindList<S>(Expression<Func<T, bool>> whereLamdba, bool isAsc, Expression<Func<T, S>> orderLamdba)

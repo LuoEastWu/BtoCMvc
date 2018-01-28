@@ -42,8 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreateTable.cs" />
-    <Compile Include="IUser.cs" />
+    <Compile Include="IUserBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Luo.Models.csproj">
+      <Project>{f6144fc8-3818-46db-bad0-7dcc2878a923}</Project>
+      <Name>Luo.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

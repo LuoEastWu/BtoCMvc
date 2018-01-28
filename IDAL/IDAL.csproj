@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="CodeFirstTable.cs" />
     <Compile Include="IBase.cs" />
-    <Compile Include="IUser.cs" />
+    <Compile Include="IUserDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

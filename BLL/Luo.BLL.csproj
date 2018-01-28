@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CodeFirstTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserBll.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\Luo.DAL.csproj">
@@ -60,6 +61,10 @@
     <ProjectReference Include="..\Luo.IBLL\IBLL.csproj">
       <Project>{4beb6267-8c35-43ec-a5be-bd3c2de588ad}</Project>
       <Name>IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Luo.Models.csproj">
+      <Project>{f6144fc8-3818-46db-bad0-7dcc2878a923}</Project>
+      <Name>Luo.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
