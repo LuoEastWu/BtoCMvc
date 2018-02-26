@@ -144,6 +144,7 @@
     <Compile Include="App_Start\CustomHandleErrorAttribute.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MasterController.cs" />
@@ -487,6 +488,7 @@
     <Content Include="fonts\Error\sing-webfont.ttf" />
     <Content Include="fonts\Error\sing-webfont.woff" />
     <Content Include="fonts\Error\sing-webfont_162a16fe.eot" />
+    <Content Include="Areas\Admin\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Error\app.js" />
     <Content Include="Scripts\Error\custom-scripts.js" />
@@ -534,6 +536,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

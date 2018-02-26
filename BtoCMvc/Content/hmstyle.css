@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 ul, li, ol {list-style: none;}
 [class*="am-u-"] {padding-left:0rem;padding-right:0rem;}
@@ -10,7 +10,9 @@ ul, li, ol {list-style: none;}
 img{width:100%;}
 .slideall{background:#fff ;}
 .smallnav img,.smallnav a,.am-g.smallnav {border:none;}
-a:hover {color:#000000;}
+a:hover {
+    color: #d2364c;
+}
 .e-price{color:red; font-size:14px;}
 .method3 img{border:none;}
 .method3 li{border:none;border-left:1px #e8e8e8 solid;border-top:1px #e8e8e8 solid}
