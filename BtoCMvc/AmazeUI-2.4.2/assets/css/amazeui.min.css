@@ -1606,7 +1606,8 @@ pre {
     text-align: left
 }
 
-.am-btn:active:focus, .am-btn:focus {
+.am-btn:active:focus, .am-btn:focus 
+{
     outline: dotted thin;
     outline: -webkit-focus-ring-color auto 1px;
     outline-offset: -2px
